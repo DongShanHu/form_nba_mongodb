@@ -1,0 +1,65 @@
+<h3>{{viewTitle}}</h3>
+
+<form action="/nba" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="{{nba._id}}">
+    <div class="form-group">
+<label>Create_time</label>
+        <input type="text" class="form-control" name="Create_time" placeholder="Create_time" value="{{nba.Create_time }}">
+ 
+
+    <div class="form-row">
+         <div class="form-group col-md-6">
+          <label>AwayName</label>
+        <input type="text" class="form-control" name="AwayName" placeholder="AwayName" value="{{nba.AwayName}}">
+      </div>
+        <div class="form-group col-md-6">
+            <label>HomeName</label>
+            <input type="text" class="form-control" name="HomeName" placeholder="HomeName" value="{{nba.HomeName}}">
+        </div>
+        <div class="form-group col-md-6">
+            <label>B2B</label>
+            <input type="text" class="form-control" name="B2B" placeholder="B2B" value="{{nba.B2B}}">
+        </div>
+
+            <div class="form-group col-md-6">
+            <label>Item</label>
+            <input type="text" class="form-control" name="Item" placeholder="Item" value="{{nba.Item}}">
+        </div>
+        <div class="form-group col-md-6">
+            <label>compansate</label>
+            <input type="text" class="form-control" name="compansate" placeholder="compansate" value="{{nba.compansate}}">
+        </div>
+            <div class="form-group col-md-6">
+            <label>AwayScore</label>
+            <input type="text" class="form-control" name="AwayScore" placeholder="AwayScore" value="{{nba.AwayScore}}">
+        </div>
+        <div class="form-group col-md-6">
+            <label>HomeScore</label>
+            <input type="text" class="form-control" name="HomeScore" placeholder="HomeScore" value="{{nba.HomeScore}}">
+        </div>
+            <div class="form-group col-md-6">
+            <label>Pass</label>
+            <input type="text" class="form-control" name="Pass" placeholder="Pass" value="{{nba.Pass}}">
+        </div>
+        <div class="form-group col-md-6">
+            <label>HalfAwayScore</label>
+            <input type="text" class="form-control" name="HalfAwayScore" placeholder="HalfAwayScore" value="{{nba.HalfAwayScore}}">
+        </div>
+            <div class="form-group col-md-6">
+            <label>HalfHomeScore</label>
+            <input type="text" class="form-control" name="HalfHomeScore" placeholder="HalfHomeScore" value="{{nba.HalfHomeScore}}">
+        </div>
+        <div class="form-group col-md-6">
+            <label>HalfScore</label>
+            <input type="text" class="form-control" name="HalfScore" placeholder="HalfScore" value="{{nba.HalfScore}}">
+        </div>
+     <div class="form-group col-md-6">
+            <label>Comment</label>
+            <input type="text" class="form-control" name="Comment" placeholder="Comment" value="{{nba.Comment}}">
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-info"><i class="fa fa-database"></i> Submit</button>
+        <a class="btn btn-secondary" href="/nba/list"><i class="fa fa-list-alt"></i> View All</a>
+    </div>
+</form>

@@ -1,0 +1,43 @@
+<h3><a class="btn btn-secondary" href="/nba"><i class="fa fa-plus"></i> Create New</a> nba List</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Create_time</th>
+            <th>HomeName</th>
+            <th>AwayName</th>
+            <th>B2B</th>
+             <th>Item: </th>
+            <th>compansate</th>
+            <th>AwayScore</th>
+            <th>HomeScore</th>
+             <th>Pass</th>
+            <th>HalfAwayScore</th>
+            <th>HalfHomeScore</th>
+            <th>HalfScore</th>
+            <th>Comment</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.Create_time}}</td>
+            <td>{{this.HomeName}}</td>
+            <td>{{this.AwayName}}</td>
+            <td>{{this.B2B}}</td>
+            <td>{{this.Item}}</td>
+            <td>{{this.compansate}}</td>
+            <td>{{this.AwayScore}}</td>
+            <td>{{this.HomeScore}}</td>
+            <td>{{this.Pass}}</td>
+            <td>{{this.HalfAwayScore}}</td>
+            <td>{{this.HalfHomeScore}}</td>
+            <td>{{this.Comment}}</td>
+            <td>
+                <a href="/nba/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/nba/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
